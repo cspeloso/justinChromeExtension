@@ -1,0 +1,34 @@
+{
+	"name": "justin",
+	"description": "justin",
+	"version": "1.0",
+	"manifest_version": 2,
+	"background":{
+		"scripts": ["justin.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["content_scripts.js"]
+		}
+	],
+	"web_accessible_resources": [
+		"images/*.*"
+	],
+	"permissions": ["storage", "tabs", "http://*/*", "https://*/*"],
+	"action":{
+		"default_popup": "popup.html",
+		"default_icon":{
+			"16": "/images/justin_16.png",
+			"32": "/images/justin_32.png",
+			"48": "/images/justin_48.png",
+			"128": "/images/justin_128.png"
+		}
+	},
+	"icons":{
+		"16": "/images/justin_16.png",
+		"32": "/images/justin_32.png",
+		"48": "/images/justin_48.png",
+		"128": "/images/justin_128.png"
+	}
+}
