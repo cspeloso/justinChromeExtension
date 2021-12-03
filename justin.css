@@ -1,0 +1,9 @@
+#changeColor{
+	color:orange;
+	background:none;
+	border:none;
+}
+#changeColor:hover{
+	color:orangered;
+	cursor:pointer;
+}
